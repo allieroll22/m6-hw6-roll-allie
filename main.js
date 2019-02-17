@@ -14,7 +14,8 @@ var myFunction = function(){
   lunchItems.sort(function(a,b){return 0.5 - Math.random()});
   var ourRandomItemFiller = document.createTextNode(lunchItems[0]);
   ourRandomItem.appendChild(ourRandomItemFiller);
-
+  var ourButtonSection = document.getElementById("generator-button");
+  ourButtonSection.removeChild(button);
 };
 
 button.onclick = myFunction;
