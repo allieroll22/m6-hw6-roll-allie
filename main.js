@@ -12,6 +12,9 @@ var lunchItems = ["Mexican", "Italian", "Chicken", "Pizza", "Sandwiches", "Bagel
 
 var myFunction = function(){
   lunchItems.sort(function(a,b){return 0.5 - Math.random()});
+  var ourRandomItemFiller = document.createTextNode(lunchItems[0]);
+  ourRandomItem.appendChild(ourRandomItemFiller);
+
 };
 
 button.onclick = myFunction;
